@@ -9,9 +9,14 @@
         "url": "https://www.alura.com.br/cursos-online-front-end"
       },
       "videos": [
-        {
+        
+        { 
           "titulo": "O que faz uma desenvolvedora front-end? #HipstersPontoTube",
           "url": "https://www.youtube.com/watch?v=ZY3-MFxVdEw"
+        },
+        {
+          "titulo": "Add 3D Model to WebSite?",
+          "url": "https://www.youtube.com/watch?v=1TeMXIWRrqE&t=56s"
         },
         {
           "titulo": "SEO com React",
@@ -90,8 +95,14 @@
           "url": "https://www.youtube.com/watch?v=5b9Z8toVaAU&t=9s"
         },
         {
+          "categoriaId": 3,
           "titulo": "Melhor forma de aprender Python",
           "url": "https://www.youtube.com/watch?v=Gojqw9BQ5qY"
+        },
+        {
+          "categoriaId": 3,
+          "titulo": "Como ingressar no mercado de Data Science?",
+          "url": "https://www.youtube.com/watch?v=gxyjGmOV540"
         },
         {
           "titulo": "Como ingressar no mercado de Data Science?",
@@ -104,18 +115,22 @@
       "cor": "#00BFA5",
       "videos": [
         {
+          "categoriaId": 4,
           "titulo": "Interestellar",
           "url": "https://www.youtube.com/watch?v=frD_IiY_A3E"
         },
         {
+          "categoriaId": 4,
           "titulo": "Esquadrão 6",
           "url": "https://www.youtube.com/watch?v=8hDdnYlNUZ4"
         },
         {
+          "categoriaId": 4,
           "titulo": "A Chegada",
           "url": "https://www.youtube.com/watch?v=rNciXGzYZms"
         },
         {
+          "categoriaId": 4,
           "titulo": "Jumanji - Próxima Fase",
           "url": "https://www.youtube.com/watch?v=fwt6h6lt1Nc"
         }
@@ -159,6 +174,7 @@
         "url": "https://alura.com.br/curso-online-aprender-a-aprender-tecnicas-para-seu-autodesenvolvimento"
       },
       "videos": [
+        
         {
           "titulo": "Como estudar melhor?",
           "url": "https://www.youtube.com/watch?v=Is6c9KSGCbk&feature=youtu.be"
