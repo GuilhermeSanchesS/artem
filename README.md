@@ -1,4 +1,4 @@
-# CookBook 
+# ARTEM - Diversidade artística  
 
 ## Aplicação React Baseada na Interface da Netflix
 
@@ -23,4 +23,4 @@ npm start
 ```
 ## Projeto no ar
 
-https://cook-book-git-category.jussarasoares.vercel.app/
+
