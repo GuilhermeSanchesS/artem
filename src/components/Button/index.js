@@ -1,6 +1,7 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
-const Button = styled.button`
+const Button = styled(Link)`
   color: var(--white);
   border: 1px solid var(--backEnd);
   box-shadow: 0 0 10px 0 var(--backEnd);
@@ -19,7 +20,7 @@ const Button = styled.button`
 
   &:hover,
   &:focus {
-    opacity: .5;
+  opacity: .5;
   }
 `;
 

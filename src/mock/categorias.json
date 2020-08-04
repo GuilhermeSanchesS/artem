@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "titulo": "Música",
+    "cor": "#64DD17",
+    "link_extra": {
+      "text": "The Black Eyed Peas - #WHERESTHELOVE ft. The World",
+      "url": "https://www.youtube.com/watch?v=YsRMoWYGLNA"
+    }
+  },
+  {
+    "id": 2,
+    "titulo": "Dança",
+    "cor": "#DD2C00",
+    "link_extra": {
+      "text": "SOBREMESA DE MORANGO COM CHANTILLY (Strawberry Shortcake)",
+      "url": "https://www.youtube.com/watch?v=hSbTVdJt97U"
+    }
+  },
+  {
+    "id": 3,
+    "titulo": "Arte Visual",
+    "cor": "#2962FF",
+    "link_extra": {
+      "text": "Very Easy!! How To Drawing 3D",
+      "url": "https://www.youtube.com/watch?v=jr-zAzxfTVU"
+    }
+  },
+  {
+    "id": 4,
+    "titulo": "Cinema",
+    "cor": "#00BFA5",
+    "link_extra": {
+      "text": "The Black Eyed Peas - #WHERESTHELOVE ft. The World",
+      "url": "https://www.youtube.com/watch?v=YsRMoWYGLNA"
+    }
+  },
+  {
+    "id": 5,
+    "titulo": "Fotografia",
+    "cor": "#FF6F00",
+    "link_extra": {
+      "text": "GoPro: Top 10 Animal Encounters",
+      "url": "https://www.youtube.com/watch?v=2Gw4K7oqK08"
+    }
+  },
+  {
+    "id": 6,
+    "titulo": "Games",
+    "cor": "#304FFE",
+    "link_extra": {
+      "text": "Horizon Zero Dawn 2",
+      "url": "https://www.youtube.com/watch?v=OpfuQulZHR8"
+    }
+  },
+  {
+    "id": 7,
+    "titulo": "Arte Digital",
+    "cor": "#6200EA",
+    "link_extra": {
+      "text": "LENTILHA COM PARMA E BOTTARGA | ERICK JACQUIN",
+      "url": "https://www.youtube.com/watch?v=saqOu-xFF6k"
+    }
+  }
+]

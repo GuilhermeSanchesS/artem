@@ -1,5 +1,5 @@
-/* eslint-disable react/jsx-props-no-spreading */
 import React from 'react';
+import PropTypes from 'prop-types';
 import SlickSlider from 'react-slick';
 import styled from 'styled-components';
 
@@ -38,12 +38,11 @@ export const SliderItem = styled.li`
   }
 `;
 
-
 const Slider = ({ children }) => (
   <Container>
     <SlickSlider {...{
       dots: false,
-      infinite: false,
+      infinite: true,
       speed: 300,
       centerMode: false,
       variableWidth: true,
@@ -55,4 +54,8 @@ const Slider = ({ children }) => (
   </Container>
 );
 
-export default Slider; 
+Slider.propTypes = {
+  children: PropTypes.element.isRequired,
+};
+
+export default Slider;

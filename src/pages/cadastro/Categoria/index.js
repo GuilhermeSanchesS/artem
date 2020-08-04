@@ -3,10 +3,11 @@ import { Link } from 'react-router-dom';
 import PageDefault from '../../../components/PageDefault';
 import FormField from '../../../components/FormField';
 import Button from '../../../components/Button';
+import mockCategorias from '../../../mock/categorias.json';
 
 function CadastroCategoria() {
   const valoresIniciais = {
-    nome: '',
+    titulo: '',
     descricao: '',
     cor: '',
   };
@@ -14,10 +15,9 @@ function CadastroCategoria() {
   const [values, setValues] = useState(valoresIniciais);
 
   function setValue(chave, valor) {
-    // chave: nome, descricao, bla, bli
     setValues({
       ...values,
-      [chave]: valor, // nome: 'valor'
+      [chave]: valor,
     });
   }
 
@@ -28,28 +28,16 @@ function CadastroCategoria() {
     );
   }
 
-  // ============
-
   useEffect(() => {
-    if (window.location.href.includes('localhost')) {
-      const URL = 'https://artemtec.herokuapp.com/categorias';
-      fetch(URL)
-        .then(async (respostaDoServer) => {
-          if (respostaDoServer.ok) {
-            const resposta = await respostaDoServer.json();
-            setCategorias(resposta);
-            return;
-          }
-          throw new Error('Não foi possível pegar os dados');
-        });
-    }
+    // simule fetch api
+    setCategorias(mockCategorias);
   }, []);
 
   return (
     <PageDefault>
       <h1>
         Cadastro de Categoria:
-        {values.nome}
+        {values.titulo}
       </h1>
 
       <form onSubmit={function handleSubmit(infosDoEvento) {
@@ -67,29 +55,18 @@ function CadastroCategoria() {
         <FormField
           label="Nome da Categoria"
           type="text"
-          name="nome"
-          value={values.nome}
+          name="titulo"
+          value={values.titulo}
           onChange={handleChange}
         />
 
         <FormField
           label="Descrição:"
-          type="????"
+          type="text"
           name="descricao"
           value={values.descricao}
           onChange={handleChange}
         />
-        {/* <div>
-          <label>
-            Descrição:
-            <textarea
-              type="text"
-              value={values.descricao}
-              name="descricao"
-              onChange={handleChange}
-            />
-          </label>
-        </div> */}
 
         <FormField
           label="Cor"
@@ -98,27 +75,15 @@ function CadastroCategoria() {
           value={values.cor}
           onChange={handleChange}
         />
-        {/* <div>
-          <label>
-            Cor:
-            <input
-              type="color"
-              value={values.cor}
-              name="cor"
-              onChange={handleChange}
-            />
-          </label>
-        </div> */}
 
-        <Button>
+        <Button type="submit">
           Cadastrar
         </Button>
       </form>
 
       <ul>
-        {categorias.map((categoria, indice) => (
-          // eslint-disable-next-line react/no-array-index-key
-          <li key={`${categoria}${indice}`}>
+        {categorias.map((categoria) => (
+          <li key={`${categoria.id}`}>
             {categoria.titulo}
           </li>
         ))}
